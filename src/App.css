@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(216, 216, 216);
+  font-family: "Roboto Slab", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+h1 {
+  opacity: 1; 
+  transform: translateX(0);}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.horisontalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  width: 80vh;
+  border: black solid 1px;
+  border-radius: 40px;
+  background-color: #f0ecec;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.back,
+.forward {
+  padding: 10px;
+  border: none;
+  background-color: rgb(216, 216, 216);
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #e5e5e5;
+
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+  background-color: #cfcbcb;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-del {
+  color: red;
+  background-color: rgb(240, 220, 229);
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.btn-del:hover {
+  background-color: rgb(229, 210, 218);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.btn-del:active {
+  position: relative;
+  top: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.final{
+  color: #D32F2F;
+  background-color: #FFEBEE;
+  border: 2px solid #FFCDD2;
+  padding: 40px;
+  margin-top: 200px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 2em;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
